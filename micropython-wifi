@@ -1,0 +1,19 @@
+sudo pip3 install esptool
+
+dmesg | grep ttyUSB
+
+esptool.py --port /dev/ttyUSB0 erase_flash
+
+esptool.py --port /dev/ttyUSB0 write_flash 0x1000 <path to firmware file>
+
+sudo pip3 install rshell
+
+rshell --buffer-size=30 -p /dev/ttyUSB0 
+repl
+
+######## Now in micro python ################
+
+station.connect("YourNetworkName", "YourNetworkPassword")
+
+station.isconnected()
+station.ifconfig()
