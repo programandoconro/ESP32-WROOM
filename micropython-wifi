@@ -33,3 +33,11 @@ led = Pin(2, Pin.OUT)
 while True:
   led.value(not led.value())
   sleep(0.5)
+
+####### Random sparkling ############ 
+
+import random
+
+for i in range (1,100000):
+      r=random.randint(0,1)
+      led.value(r)
