@@ -4,6 +4,8 @@ dmesg | grep ttyUSB
 
 esptool.py --port /dev/ttyUSB0 erase_flash
 
+# Download firmware https://micropython.org/resources/firmware/esp32-20190907-v1.11-291-gc69f58e6b.bin
+
 esptool.py --port /dev/ttyUSB0 write_flash 0x1000 <path to firmware file>
 
 sudo pip3 install rshell
