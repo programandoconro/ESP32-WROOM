@@ -13,31 +13,21 @@ sudo pip3 install rshell
 rshell --buffer-size=30 -p /dev/ttyUSB0 
 repl
 
-######## Now in micro python ################
+######## We are in MicroPython ################
+
+import network
 
 station.connect("YourNetworkName", "YourNetworkPassword")
-
 station.isconnected()
 station.ifconfig()
 
-
-
-##### blue ligh sparkling ####
-
+##### random blinking #######
 
 from machine import Pin
 from time import sleep
-
-led = Pin(2, Pin.OUT)
-
-while True:
-  led.value(not led.value())
-  sleep(0.5)
-
-####### Random sparkling ############ 
-
 import random
 
+led = Pin(2, Pin.OUT)
 for i in range (1,100000):
       r=random.randint(0,1)
       led.value(r)
