@@ -17,6 +17,8 @@ repl
 
 import network
 
+station = network.WLAN(network.STA_IF)
+station.active(True)
 station.connect("YourNetworkName", "YourNetworkPassword")
 station.isconnected()
 station.ifconfig()
