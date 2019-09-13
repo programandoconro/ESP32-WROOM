@@ -33,3 +33,17 @@ led = Pin(2, Pin.OUT)
 for i in range (1,10**100):
       r=random.randint(0,1)
       sleep(0.1);led.value(r)
+      
+      
+      
+      
+      
+  # zero
+  for i in range(1,10000):
+      led.on()
+      sleep(0.1)
+      sleep(0.1)
+      led.off()
+      sleep(0.1)
+      led.off()
+
