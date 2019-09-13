@@ -39,11 +39,20 @@ for i in range (1,10**100):
       
       
   # zero
-  for i in range(1,10000):
+import gpiozero as io
+from time import sleep
+
+led=io.LED(17)
+
+for i in range(1,10000):
       led.on()
       sleep(0.1)
-      sleep(0.1)
       led.off()
-      sleep(0.1)
+      sleep(0.2)
       led.off()
-
+      sleep(0.3)
+      led.on()
+      sleep(0.4)
+      led.off()
+      sleep(0.5)
+      led.on()
