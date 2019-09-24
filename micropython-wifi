@@ -10,6 +10,8 @@ sudo ./configure
 sudo make -j 4
 sudo make altinstall
 
+
+sudo apt install python3-pip
 sudo pip3 install esptool
 
 dmesg | grep ttyUSB
