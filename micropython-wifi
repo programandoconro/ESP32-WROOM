@@ -71,4 +71,11 @@ for i in range(1,1000000):
       led.on()
       
 
+## para obtener, transferir u otro tipo de interaccion. usar ampy (apt install ampy)
+
+ampy --port /dev/ttyUSB2 ls
+
+
+
+
 
