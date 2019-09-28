@@ -17,8 +17,8 @@ if sta.isconnected()==True:
     for i in range (1,10**100):
         r=random.randint(0,1)
         sleep(0.1);led.value(r)
-else:        
-      led.value(0)
+    else:        
+        led.value(0)
     
     
     
