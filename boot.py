@@ -10,7 +10,7 @@ ap.config(essid='ScaryBug')
 sta = network.WLAN(network.STA_IF)
 sta.active(True)
 sta.connect("AndroidAP", "xjnn4112")
-sleep(3)
+sleep(5)
 
 if sta.isconnected()==True:
     led = Pin(2, Pin.OUT)
