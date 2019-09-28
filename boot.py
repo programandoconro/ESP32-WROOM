@@ -7,6 +7,7 @@ ap.config(essid='ScaryBug')
 sta = network.WLAN(network.STA_IF)
 sta.active(True)
 sta.connect("AndroidAP", "xjnn4112")
+sleep(1)
 sta.isconnected()
 sta.ifconfig()
 
@@ -16,7 +17,7 @@ sta.ifconfig()
 
 
 while True:
-  sta.ifconnected()==True
+  sta.isconnected()==True
   from machine import Pin
   from time import sleep
   import random
