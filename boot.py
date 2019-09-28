@@ -16,7 +16,7 @@ sta.ifconfig()
 
 
 while True:
-  sta.active(True)
+  sta.ifconnected()==True
   from machine import Pin
   from time import sleep
   import random
