@@ -1,5 +1,7 @@
 # Random lighting for home made desk lamp with wroom-esp32
 
+# Install pip3 
+
     sudo apt-get install -y build-essential tk-dev libncurses5-dev libncursesw5-dev \
     libreadline6-dev libdb5.3-dev libgdbm-dev libsqlite3-dev libssl-dev libbz2-dev \
     libexpat1-dev liblzma-dev zlib1g-dev libffi-dev
@@ -14,7 +16,12 @@
 
 
     sudo apt install python3-pip
+    
+# Install tool for communication with ESP32
+
     sudo pip3 install esptool
+    
+ # Look for the ubication of ESP32 connected in USB and install microPython on device
 
     dmesg | grep ttyUSB
 
@@ -28,3 +35,17 @@
 
     rshell --buffer-size=30 -p /dev/ttyUSB0 
     repl
+    
+ # We are in, lets code some Python to make random lighting
+ 
+    from machine import Pin
+    from time import sleep
+    import random
+
+    led = Pin(2, Pin.OUT)
+    for i in range (1,10**100):
+        r=random.randint(0,1)
+        sleep(0.1);led.value(r)
+ 
+ 
+# We have a cool lamp
