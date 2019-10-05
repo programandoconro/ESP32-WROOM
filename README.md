@@ -1,4 +1,4 @@
-# Random lighting for home made desk lamp with wroom-esp32
+# Random lighting for home made desk lamp and server intruder alarm with MicroPython on a wroom-esp32 WIFI chip
 
 # Install pip3 
 
