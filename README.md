@@ -50,7 +50,19 @@
  
 # We have a cool lamp with random lighting, we can chang de sleep time for different effects.
 
-# We can create a boot.py with the code above and put it on the device for automatic executing on boot when connected to power.
+Use Crl-x Crl-z to exit, you can close the shell and shoud keep running code on device.
+
+# We can also create a boot.py with the code above and put it on the device for automatic executing on boot when connected to power.
+
+Install ampy and add python code on device
+
+   
+    ampy --port /dev/ttyUSB** put boot.py
+    
+ 
+ # Now, we just have to supply power and our cool lamp will work. Hope you enjoy lights when programming. 
+ 
+
 
 
 # Optional idea: make the lamp into an alarm for when someone connects to our server.
