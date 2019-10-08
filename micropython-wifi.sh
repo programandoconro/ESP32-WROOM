@@ -27,55 +27,8 @@ sudo pip3 install rshell
 rshell --buffer-size=30 -p /dev/ttyUSB0 
 repl
 
-######## We are in MicroPython ################
-
-import network
-
-station = network.WLAN(network.STA_IF)
-station.active(True)
-station.connect("YourNetworkName", "YourNetworkPassword")
-station.isconnected()
-station.ifconfig()
-
-ap= network.WLAN(network.AP_IF)
-ap.active(True)
-ap.config(essid='ScaryBug')
-
-##### random blinking #######
-
-from machine import Pin
-from time import sleep
-import random
-
-led = Pin(2, Pin.OUT)
-for i in range (1,10**100):
-      r=random.randint(0,1)
-      sleep(0.1);led.value(r)
-      
-## Raspberrypi zero GPIO LED blink
-
-import gpiozero as io
-from time import sleep
-import random 
-
-led=io.LED(17)
-
-for i in range(1,1000000):
-      r=random.randint(0,9)*0.1
-      led.on()
-      sleep(0.1*r)
-      led.off()
-      sleep(0.2*r)
-      led.off()
-      sleep(0.3*r)
-      led.on()
-      
-
 ## para obtener, transferir u otro tipo de interaccion. usar ampy (apt install ampy)
 
-ampy --port /dev/ttyUSB2 ls
-
-
-
-
-
+ampy --port /dev/ttyUSB* ls
+ampy --port /dev/ttyUSB* put boot.py
+ampy --port /dev/ttyUSB* run boot.py
