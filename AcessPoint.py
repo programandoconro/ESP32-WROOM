@@ -42,7 +42,10 @@ import random
 
 led = Pin(2, Pin.OUT)
 for i in range (1,10**100):
-    r=random.randint(0,1)
-    sleep(0.1);led.value(r)
+    sleep(1);led.value(1)
+    conn.send(response)
+    sleep(1);led.value(0)
+    sleep(1);led.value(1)
+
 
 
