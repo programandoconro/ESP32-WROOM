@@ -19,7 +19,7 @@ from time import sleep
 import random
 
 led = Pin(2, Pin.OUT)
-for i in range (1,10**100):
-      r=random.randint(0,1)
-      sleep(0.1);led.value(r)
-      
+
+while True :
+        r=random.randint(0,1)
+        sleep(0.07);led.value(r)
