@@ -43,9 +43,10 @@
     import random
 
     led = Pin(2, Pin.OUT)
-    for i in range (1,10**100):
+
+    while True :
         r=random.randint(0,1)
-        sleep(0.1);led.value(r)
+        sleep(0.07);led.value(r)
  
  
 # We have a cool lamp with random lighting, we can chang de sleep time for different effects.
@@ -57,12 +58,13 @@ Use Crl-x Crl-z to exit, you can close the shell and shoud keep running code on 
 Install ampy and add python code on device
 
    
-    ampy --port /dev/ttyUSB** put boot.py
+    ampy --port /dev/ttyUSB0 put boot.py
     
  
  # Now, we just have to supply power and our cool lamp will work. Hope you enjoy lights when programming. 
  
 
+    ampy --port /dev/ttyUSB0 run boot.py
 
 
 # Optional idea: make the lamp into an alarm for when someone connects to our server.
