@@ -80,7 +80,7 @@ Install ampy and add python code on device
 
     sta = network.WLAN(network.STA_IF)
     sta.active(True)
-    sta.connect("AndroidAP", "xjnn4112")
+    sta.connect("YOUR-WIFI-NAME", "PASSWORD")
     sleep(5)
 
     html = """<!DOCTYPE html>
