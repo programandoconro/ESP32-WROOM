@@ -34,10 +34,9 @@ conn.send(response)
 
 from machine import Pin
 from time import sleep
-import random
 
 led = Pin(2, Pin.OUT)
-for i in range (1,10**100):
+while True:
     sleep(1);led.value(1)
     conn.send(response)
     sleep(1);led.value(0)
