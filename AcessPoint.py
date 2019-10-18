@@ -2,13 +2,10 @@ try:
   import usocket as socket
 except:
   import socket
-import network
-import esp
-esp.osdebug(None)
-import gc
-gc.collect()
 
-ssid = 'MicroPython-AP'
+import network
+
+ssid = 'ScaryBug'
 password = '123456789'
 
 ap = network.WLAN(network.AP_IF)
@@ -18,7 +15,6 @@ ap.config(essid=ssid, password=password)
 while ap.active() == False:
   pass
 
-print('Connection successful')
 print(ap.ifconfig())
 
 def web_page():
@@ -46,6 +42,3 @@ for i in range (1,10**100):
     conn.send(response)
     sleep(1);led.value(0)
     sleep(1);led.value(1)
-
-
-
