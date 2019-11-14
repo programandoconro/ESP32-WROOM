@@ -49,7 +49,7 @@
         sleep(0.07);led.value(r)
  
  
-# We have a cool lamp with random lighting, we can chang de sleep time for different effects.
+# We have a cool lamp with random lighting, we can change the sleep time for different effects.
 
 Use Crl-x Crl-z to exit, you can close the shell and shoud keep running code on device.
 
