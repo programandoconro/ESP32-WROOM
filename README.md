@@ -52,7 +52,10 @@
         sleep(0.07);led.value(r)
  
  
-# We have a cool lamp with random lighting, we can change the sleep time for different effects.
+# We have a cool lamp with random lighting, we can change the sleep time for different effects. Now, we can make a homemade frame for more cool lighithing effects to our lamp. For example, like this (hehehe):
+
+<div style="text-align:center"><img src="https://github.com/progamandoconro/ESP32-WROOM/blob/master/_DSC8897.JPG" /></div>
+
 
 Use Crl-x Crl-z to exit, you can close the shell and shoud keep running code on device.
 
