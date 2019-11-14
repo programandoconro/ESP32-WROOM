@@ -71,6 +71,12 @@ Install ampy and add python code on device
  
 
     ampy --port /dev/ttyUSB0 run boot.py
+    
+# The code will autorun with every boot now, so just have to supply power. 
+
+# This is a video showing the final lamp with the cool lighting. 
+
+https://youtu.be/B82Uy2I6u9Q
 
 
 # Optional idea: make the lamp into an alarm for when someone connects to our server.
