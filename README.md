@@ -1,5 +1,8 @@
 # Random lighting for home made desk lamp and server intruder alarm with MicroPython on a wroom-esp32 WIFI chip
 
+<div style="text-align:center"><img src="https://github.com/progamandoconro/ESP32-WROOM/blob/master/WROOM_ESP32.JPG" /></div>
+
+
 # Install pip3 
 
     sudo apt-get install -y build-essential tk-dev libncurses5-dev libncursesw5-dev \
