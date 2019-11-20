@@ -72,15 +72,6 @@ Install ampy and add python code on device
 
     ampy --port /dev/ttyUSB0 run boot.py
 
-# This is a video showing the final lamp with the cool lighting. 
-
-[![Random Lighting with ESP32 and Micro](https://github.com/progamandoconro/ESP32-WROOM/blob/master/Screenshot%20from%202019-11-20%2009-15-30.png
-)](https://youtu.be/B82Uy2I6u9Q)
-
-
-
-
-
 # Optional idea: make the lamp into an alarm for when someone connects to our server.
 
     import network
@@ -120,3 +111,8 @@ Install ampy and add python code on device
             cl.send(html)
             sleep(0.1);led.value(r)
             cl.close()
+
+# This is a video showing the final lamp with the cool lighting. 
+
+[![Random Lighting with ESP32 and Micro](https://github.com/progamandoconro/ESP32-WROOM/blob/master/Screenshot%20from%202019-11-20%2009-15-30.png
+)](https://youtu.be/B82Uy2I6u9Q)
