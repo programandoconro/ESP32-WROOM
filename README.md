@@ -112,7 +112,7 @@ Install ampy and add python code on device
             sleep(0.1);led.value(r)
             cl.close()
 
-# This is a video showing the final lamp with the cool lighting. 
+# This is a video showing the lamp:
 
 [![Random Lighting with ESP32 and Micro](https://github.com/progamandoconro/ESP32-WROOM/blob/master/Screenshot%20from%202019-11-20%2009-15-30.png
 )](https://youtu.be/B82Uy2I6u9Q)
