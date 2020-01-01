@@ -22,12 +22,13 @@ wget https://micropython.org/resources/firmware/esp32-20190907-v1.11-291-gc69f58
 
 esptool.py --port /dev/ttyUSB0 write_flash 0x1000 <path to firmware file>
 
-sudo pip3 install rshell
+sudo pip3 install rshell 
 
 rshell --buffer-size=30 -p /dev/ttyUSB0 
 repl
 
-## para obtener, transferir u otro tipo de interaccion. usar ampy (apt install ampy)
+## para obtener, transferir u otro tipo de interaccion. 
+sudo pip3 install ampy
 
 ampy --port /dev/ttyUSB* ls
 ampy --port /dev/ttyUSB* put boot.py
