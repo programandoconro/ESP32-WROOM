@@ -16,7 +16,7 @@ sudo pip3 install esptool
 
 dmesg | grep ttyUSB
 
-esptool.py --port /dev/ttyUSB0 erase_flash
+esptool.py --port /dev/ttyUSB0 erase_flash # es posible que necesites dar click al boton en el dispositivo.
 
 wget https://micropython.org/resources/firmware/esp32-20190907-v1.11-291-gc69f58e6b.bin
 
