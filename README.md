@@ -71,6 +71,12 @@ Install ampy and add python code on device
  
 
     ampy --port /dev/ttyUSB0 run boot.py
+    
+  
+# This is a video showing the lamp:
+
+[![Random Lighting with ESP32 and Micro](https://github.com/progamandoconro/ESP32-WROOM/blob/master/Screenshot%20from%202019-11-20%2009-15-30.png
+)](https://youtu.be/B82Uy2I6u9Q)
 
 # Optional idea: make the lamp into an alarm for when someone connects to our server.
 
@@ -112,7 +118,6 @@ Install ampy and add python code on device
             sleep(0.1);led.value(r)
             cl.close()
 
-# This is a video showing the lamp:
+Go to 192.168.4.1 on the device connected to "Scary Bug" Wifi. 
 
-[![Random Lighting with ESP32 and Micro](https://github.com/progamandoconro/ESP32-WROOM/blob/master/Screenshot%20from%202019-11-20%2009-15-30.png
-)](https://youtu.be/B82Uy2I6u9Q)
+
