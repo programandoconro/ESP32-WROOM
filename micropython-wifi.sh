@@ -28,7 +28,7 @@ rshell --buffer-size=30 -p /dev/ttyUSB0
 repl
 
 ## para obtener, transferir u otro tipo de interaccion. 
-sudo pip3 install ampy
+sudo pip3 install adafruit-ampy
 
 ampy --port /dev/ttyUSB* ls
 ampy --port /dev/ttyUSB* put boot.py
