@@ -1,4 +1,6 @@
-<html>
+html = """
+
+<div>
 	<script>const myIndex = () => {alert('Hello Hackers')}</script>
 	<head>
 		<title> Hello Hackers !!</title>
@@ -25,3 +27,5 @@
 		<hr />
 	</body>
 </html>
+
+"""
