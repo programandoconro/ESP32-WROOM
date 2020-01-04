@@ -1,3 +1,4 @@
+
 import network
 from machine import Pin
 from time import sleep
@@ -9,14 +10,19 @@ ap.config(essid='ScaryBug')
 
 sta = network.WLAN(network.STA_IF)
 sta.active(True)
-sta.connect("AndroidAP", "xjnn4112")
+sta.connect("xxxx", "xxxxx")
 sleep(5)
 
 html = """<!DOCTYPE html>
 <html>
     <head> <title> Hello Hackers !!
 </title> </head>
-    <body> <h1>Welcome to my site, please hack it and share me how. </h1> </body>
+    <body> <h5>Welcome to my site, please hack it and share me how. 
+    </h5> 
+    <button onclick="alert('Hello again Hackers')"> Push me </button>
+    <script>alert('Hello Hackers')</script>
+    </body>
+
 </html>
 """
 
@@ -35,13 +41,3 @@ if sta.isconnected()==True:
         cl.send(html)
         sleep(0.1);led.value(r)
         cl.close()
-
-    
-    
-    
-    
-    
-      
-      
-
-      
