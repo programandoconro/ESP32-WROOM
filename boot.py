@@ -1,4 +1,4 @@
-
+from index import html
 import network
 from machine import Pin
 from time import sleep
@@ -10,21 +10,8 @@ ap.config(essid='ScaryBug')
 
 sta = network.WLAN(network.STA_IF)
 sta.active(True)
-sta.connect("xxxx", "xxxxx")
+sta.connect("xxxx", "xxxxxx")
 sleep(5)
-
-html = """<!DOCTYPE html>
-<html>
-    <head> <title> Hello Hackers !!
-</title> </head>
-    <body> <h5>Welcome to my site, please hack it and share me how. 
-    </h5> 
-    <button onclick="alert('Hello again Hackers')"> Push me </button>
-    <script>alert('Hello Hackers')</script>
-    </body>
-
-</html>
-"""
 
 import socket
 addr = socket.getaddrinfo('0.0.0.0', 80)[0][-1]
