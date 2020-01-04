@@ -2,13 +2,15 @@ html = """
 
 <div>
 	<script>const myIndex = () => {alert('Hello Hackers')}</script>
+	<script>const myName = (e) => {alert(e)}</script>
+	
 	<head>
 		<title> Hello Hackers !!</title>
 	</head>
 	<body>
 		<h1>Welcome to my site, please hack it and share me how.</h1>
+		<input onChange="myName(this.value)"> </input>
 		<button onclick="myIndex()"> Push me </button>
-		<input> </input>
 		<hr />
 
 		<iframe src="https://progamandoconro.github.io/FibonacciMathGame/" height="2100" width="1200"></iframe>
@@ -26,6 +28,6 @@ html = """
 		></iframe>
 		<hr />
 	</body>
-</html>
+</div>;
 
 """
