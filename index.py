@@ -1,6 +1,7 @@
 html = """
 
 <div>
+<center>
 	<script>const myIndex = () => {alert('Hello Hackers')}</script>
 	<script>const myName = (e) => {alert(e)}</script>
 	
@@ -13,6 +14,25 @@ html = """
 		<button onclick="myIndex()"> Push me </button>
 		<hr />
 
+		<iframe
+			src="https://progamandoconro.github.io/Image-Classification-ML-App/"
+			height="2100"
+			width="2000"
+		></iframe>
+		<hr />
+<iframe
+			src="https://progamandoconro.github.io/MyReactTODOApp/"
+			height="2100"
+			width="2000"
+		></iframe>
+		<hr />
+<iframe
+			src="https://programandoconro.wordpress.com/"
+			height="2100"
+			width="2000"
+		></iframe>
+		<hr />
+
 		<iframe src="https://progamandoconro.github.io/FibonacciMathGame/" height="2100" width="1200"></iframe>
 		<hr />
 		<iframe
@@ -21,13 +41,11 @@ html = """
 			width="1200"
 		></iframe>
 		<hr />
-		<iframe
-			src="https://progamandoconro.github.io/Image-Classification-ML-App/"
-			height="2100"
-			width="2000"
-		></iframe>
-		<hr />
+
+
+
 	</body>
+</center>
 </div>;
 
 """
