@@ -21,7 +21,7 @@ s.bind(addr)
 
 if sta.isconnected()==True:
     led = Pin(2, Pin.OUT)
-    for i in range (1,10**100):
+    while True :
         r=random.randint(0,1)
         s.listen(1)
         cl, addr = s.accept()
